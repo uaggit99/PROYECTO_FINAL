@@ -1,0 +1,152 @@
+:root {
+  --nyanza: #d8f3dcff;
+  --celadon: #b7e4c7ff;
+  --celadon-2: #95d5b2ff;
+  --mint: #74c69dff;
+  --mint-2: #52b788ff;
+  --sea-green: #40916cff;
+  --dartmouth-green: #2d6a4fff;
+  --brunswick-green: #1b4332ff;
+  --dark-green: #081c15ff;
+  --coral: #ffd050;
+  --sol: #ffff00;
+  --footer-hover: #d6324e;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background: var(--dartmouth-green);
+  padding: 1rem 1rem;
+  color: var(--mint-2);
+}
+#lema{
+  font-family: "Poppins";
+  font-size: 1.1rem;
+  color: #6ae5ee;
+}
+#lema span{
+  font-size: 30px;
+
+}
+.logo {
+  font-size: 1.9rem;
+  color: var(--sol);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+}
+
+.nav-links a {
+  color: var(--celadon);
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.nav-links :hover {
+  font-size: 1.4rem;
+  color: var(--coral);
+}
+
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+#toggle-menu {
+  display: none;
+}
+
+/* Responsive */
+
+/*main {
+}*/
+body ul{
+    list-style-type: square;
+    padding-left: 20px;
+  
+    
+}
+.footer {
+  background-color: var(--sea-green);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer .social {
+  margin-bottom: 10px;
+}
+
+.footer .social a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 25px;
+  transition: color 0.3s ease;
+}
+.footer h4 {
+  margin: 10px;
+  padding: 10px;
+}
+
+.footer .social h5 a:hover {
+  color: var(--footer-hover);
+}
+#facebook :hover{
+  color:#084da7;
+}
+#twitter :hover{
+  color: #1DA1F2;
+}
+#instagram:hover{
+  color: #9E37B8;
+}
+#linkedin :hover{
+  color:#0B66C3
+}
+
+@media (max-width: 600px) {
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: var(--brunswick-green);
+    flex-direction: column;
+    display: none;
+  }
+
+  #toggle-menu:checked + .menu-icon + .nav-links {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+  #lema span{
+  font-size: 25px;
+
+}
+/*
+main {
+  }*/
+
+  .footer .social a {
+    font-size: 20px;
+    margin: 0 8px;
+  }
+
+  .footer {
+    padding: 15px;
+  }
+}

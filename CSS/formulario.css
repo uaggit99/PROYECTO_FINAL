@@ -1,0 +1,142 @@
+:root {
+  --nyanza: #d8f3dcff;
+  --celadon: #b7e4c7ff;
+  --celadon-2: #95d5b2ff;
+  --mint: #74c69dff;
+  --mint-2: #52b788ff;
+  --sea-green: #40916cff;
+  --dartmouth-green: #2d6a4fff;
+  --brunswick-green: #1b4332ff;
+  --dark-green: #081c15ff;
+  --fuente: 'Poppins', sans-serif;
+  --sol: #ffff00;
+}
+
+/*
+body{
+  background: radial-gradient(circle, var(--celadon-2),var(--sea-green),var(--brunswick-green));
+}*/
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-image: 
+    url('../imagenes/solar_fondo.jpg');
+  /* Ajusta la ruta según tu estructura */
+  opacity: .7;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  color: white;
+  /* Opcional para mejorar contraste del texto */
+  font-family: Arial, sans-serif;
+}
+
+body h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: var(--sol);
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.contacto {
+  /*background-color: var(--dartmouth-green);*/
+  padding: 10px;
+  max-width: 600px;
+  margin: auto;
+  font-family: var(--fuente);
+}
+
+.contacto h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--dark-green);
+}
+
+#formulario-contacto {
+  margin: 20px;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+fieldset {
+  padding: 20px;
+  border: 3px solid var(--dartmouth-green);
+  border-radius: 15px;
+
+}
+
+label {
+  width: 150px;
+  margin: 10px 5px;
+  color: var(--brunswick-green);
+  font-weight: bolder;
+}
+
+input, #asunto {
+  width: 280px;
+  padding: 10px;
+  border: 2px solid var(--brunswick-green);
+  border-radius: 5px;
+}
+
+textarea {
+  width: 300px;
+  height: 200px;
+  border: 2px solid var(--brunswick-green);
+  border-radius: 10px;
+}
+
+input,
+textarea, #asunto {
+  font-size: 21px;
+  color: #1438a5;
+  font-family: 'Tahoma, Geneva, Verdana, sans-serif';
+}
+
+button {
+  width: 120px;
+  align-content: center;
+  font-size: medium;
+  font-weight: bold;
+  margin-top: 20px;
+  padding: 12px;
+  background-color: var(--mint-2);
+  color: var(--dark-green);
+  border: 2px solid var(--brunswick-green);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--dartmouth-green);
+}
+
+@media (max-width: 420px) {
+  body h1 {
+    font-size: 2rem;
+  }
+
+  textarea {
+    width: 200px;
+    height: 180px;
+
+  }
+
+  #formulario-contacto {
+
+    margin: 10px;
+    font-size: 15px;
+  }
+  #validar{
+    z-index: 2;
+  }
+
+
+
+}
