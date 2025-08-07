@@ -4,12 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>tabla dinamica</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/energy.css" />
   </head>
   <body>
     <br />
+    <div class="calculadora">
+    <h1>CALCULADORA</h2>
+    <br>
+    <p>
+      A medida que crece la demanda de energía eléctrica, también lo hacen las
+      interrogantes sobre su impacto ambiental. El uso de carbón, el petróleo y
+      el gas natural, que generan emisiones de gases de efecto invernadero,
+      contribuyendo al calentamiento global.Debemos optar por energias
+      limpias.El programa convierte el consumo mensual en Kwh a Twh en un año
+    </p>
+    <label>Ingrese el Consumo mensual en Kwh</label>
+    <input type="text" id="valor">
+    <button id="ejecutar">C a l c u l a r</button>
+    <label  id="respuesta"></label>    
+    </div>
+
     <div class="container">
-      
       <div id="tabla-scroll" class="area1">
         <h2>Tabla mundial</h2>
         <table id="tablaEnergy">
@@ -28,7 +44,7 @@
         </table>
       </div>
       <br /><br />
-      
+
       <div id="tabla-scroll" class="area2">
         <h2>Tabla Colombia</h2>
         <table id="tablaEnergy2">

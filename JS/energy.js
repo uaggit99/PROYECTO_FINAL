@@ -81,3 +81,23 @@ async function cargarCSVColombia() {
   });
 }
 cargarCSVColombia();
+
+
+document.getElementById("ejecutar").addEventListener("click", function(e){
+  e.preventDefault();
+   const valor= parseFloat(document.getElementById("valor").value);
+   let respuesta = document.getElementById("respuesta");
+   
+   if(isNaN(valor)){
+    respuesta.innerHTML="Ingrese valores numericos";
+    return
+   }
+   let calculo = ((valor/1000)*12).toFixed(2);
+   respuesta.style.color="red";
+   respuesta.textContent=`El consumo en año en Twh  es ${calculo}`;
+
+})
+ 
+
+
+
