@@ -23,7 +23,7 @@ body {
   background-image: 
     url('../imagenes/solar_fondo.jpg');
   /* Ajusta la ruta según tu estructura */
-  opacity: .7;
+  opacity: .6;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -57,10 +57,13 @@ body h1 {
 }
 
 #formulario-contacto {
+  position: absolute;
+  z-index: 10;
   margin: 20px;
   font-size: 18px;
   display: flex;
   flex-direction: column;
+  
 
 }
 
