@@ -8,7 +8,7 @@
   --dartmouth-green: #2d6a4fff;
   --brunswick-green: #1b4332ff;
   --dark-green: #081c15ff;
-  --fuente: 'Poppins', sans-serif;
+  --fuente: "Poppins", sans-serif;
   --sol: #ffff00;
 }
 
@@ -20,14 +20,13 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  background-image: 
-    url('../imagenes/solar_fondo.jpg');
+  background-image: url("../imagenes/solar_fondo.jpg");
   /* Ajusta la ruta según tu estructura */
-  opacity: .7;
+  opacity: 0.6;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment:fixed;
+  background-attachment:inherit;
   color: white;
   /* Opcional para mejorar contraste del texto */
   font-family: Arial, sans-serif;
@@ -44,6 +43,7 @@ body h1 {
 
 .contacto {
   /*background-color: var(--dartmouth-green);*/
+
   padding: 10px;
   max-width: 600px;
   margin: auto;
@@ -57,20 +57,16 @@ body h1 {
 }
 
 #formulario-contacto {
-  
   margin: 20px;
   font-size: 18px;
   display: flex;
   flex-direction: column;
-  
-
 }
 
 fieldset {
   padding: 20px;
   border: 3px solid var(--dartmouth-green);
   border-radius: 15px;
-
 }
 
 label {
@@ -80,7 +76,8 @@ label {
   font-weight: bolder;
 }
 
-input, #asunto {
+input,
+#asunto {
   width: 280px;
   padding: 10px;
   border: 2px solid var(--brunswick-green);
@@ -95,10 +92,11 @@ textarea {
 }
 
 input,
-textarea, #asunto {
+textarea,
+#asunto {
   font-size: 21px;
   color: #1438a5;
-  font-family: 'Tahoma, Geneva, Verdana, sans-serif';
+  font-family: "Tahoma, Geneva, Verdana, sans-serif";
 }
 
 button {
@@ -112,13 +110,12 @@ button {
   color: var(--dark-green);
   border: 2px solid var(--brunswick-green);
   border-radius: 5px;
-  cursor: pointer;
+  cursor:pointer;
 }
 
 button:hover {
   background-color: var(--brunswick-green);
   color: white;
-  
 }
 
 @media (max-width: 420px) {
@@ -129,18 +126,13 @@ button:hover {
   textarea {
     width: 200px;
     height: 180px;
-
   }
 
   #formulario-contacto {
-
     margin: 10px;
     font-size: 15px;
   }
-  #validar{
+  #validar {
     z-index: 2;
   }
-
-
-
 }

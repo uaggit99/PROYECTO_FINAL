@@ -81,6 +81,7 @@ body {
   background: linear-gradient(to right, #5aa19b, #fff);
   padding: 15px;
   color: #135370;
+  line-height: 1.7;
 }
 body h3 {
   color: #191970;
@@ -160,12 +161,14 @@ body ul {
 
 @media (min-width: 768px){
   .tipo1, .tipo2, .comparacion{
+    line-height: 1.7;
     display: flex;
     justify-content: center;
     align-content: center;
 
   }
   .parrafo1 , .parrafo2 {
+    
     width: 48vw;
     height: auto;
     margin:3%;

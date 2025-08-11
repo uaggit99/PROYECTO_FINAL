@@ -6,6 +6,9 @@ function grafico_areas() {
   const valores_Biomass = [
     138.0, 147.0, 134.0, 17.0, 182.0, 199.0, 199.0, 211.0, 244.0, 28.0, 282.0,
   ];
+  const valores_solar = [
+    0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.13, 0.02, 0.02, 317.0,
+  ];
 
   const valores_aeolica = [
     4127.0, 548.0, 5762.0, 70.0, 583.0, 5088.0, 307.0, 0.6, 0.4, 0.1, 5985.0,
@@ -16,10 +19,12 @@ function grafico_areas() {
   ];
 
   const colorBiomass = "#8056b1ff";
+  const colorSolar = "#FFDF20";
   const colorAeolica = "#3da8b6ff";
   const colorHidrica = "#5078b8ff";
 
   const borderBiomass = "#6b4497ff";
+  const borderSolar = "#FFDF20";
   const borderAeolica = "#25909eff";
   const borderHidrica = "#416bafff";
 
@@ -37,8 +42,18 @@ function grafico_areas() {
           tension: 0.4,
           fill: true,
         },
+        
         {
           label: labelst[1],
+          data: valores_solar,
+          backgroundColor: colorSolar,
+          borderColor: borderSolar,
+          borderWidth: 2,
+          tension: 0.4,
+          fill: true,
+        },
+        {
+          label: labelst[2],
           data: valores_aeolica,
           backgroundColor: colorAeolica,
           borderColor: borderAeolica,
@@ -47,7 +62,7 @@ function grafico_areas() {
           fill: true,
         },
         {
-          label: labelst[2],
+          label: labelst[3],
           data: valores_hidrica,
           backgroundColor: colorHidrica,
           borderColor: borderHidrica,
