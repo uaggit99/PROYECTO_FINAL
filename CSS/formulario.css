@@ -21,14 +21,13 @@ body {
   padding: 0;
   min-height: 100vh;
   background-image: url("../imagenes/solar_fondo.jpg");
-  /* Ajusta la ruta según tu estructura */
   opacity: 0.6;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment:inherit;
+  background-attachment: inherit;
   color: white;
-  /* Opcional para mejorar contraste del texto */
+
   font-family: Arial, sans-serif;
 }
 
@@ -110,7 +109,7 @@ button {
   color: var(--dark-green);
   border: 2px solid var(--brunswick-green);
   border-radius: 5px;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 button:hover {

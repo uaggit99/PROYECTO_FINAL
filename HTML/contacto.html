@@ -9,16 +9,15 @@
   <body>
     <h1>Energia Solar</h1><br>
     <div class="contacto">
-      
-      <form id="formulario-contacto">
-        <h2>Contactanos</h2>
+       <h2>Contactanos</h2>      
+      <form id="formulario-contacto">       
         <fieldset>
             <label for="nombre">Nombre  </label>
             <input type="text" name="nombre" id ="nombre"placeholder="Nombre Completo" required><br><br>
             <label for="email">Email  </label>
             <input type="email" name="email" id ="email"placeholder="Correo Electronico" required><br><br>
             <label for="telefono">Telefono  </label>
-            <input type="text" name="telefono" id ="telefono"placeholder="Telefono" required><br><br>
+            <input type="tel" name="telefono" id ="telefono"placeholder="Telefono" required><br><br>
             <label for="asunto">Asunto</label>
             <select name="asunto" id="asunto" required>
                 <option value="">--Elige una Opcion--</option>
@@ -29,11 +28,13 @@
                 <option value="otros">Otros</option>                
             </select><br><br>
             <label for="mensaje"></label>
-            <textarea name="mensaje" id="mensaje" required></textarea><br><br>
+            <textarea name="mensaje" id="mensaje"  rows="5"  required></textarea><br><br>
             <button  type="button" id="enviar" >E n v i a r</button>
         </fieldset>    
     </form>
     </div>
+
     <script scr="../JS/formulario.js"></script>
+
   </body>
 </html>
