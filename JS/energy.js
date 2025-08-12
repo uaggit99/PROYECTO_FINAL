@@ -96,5 +96,5 @@ document.getElementById("ejecutar").addEventListener("click", function (e) {
   }
   let calculo = ((valor / 1000) * 12).toFixed(2);
   respuesta.style.color = "red";
-  respuesta.textContent = `El consumo en año en Twh  es ${calculo}`;
+  respuesta.textContent = `El consumo en año en Mwh  es ${calculo}`;
 });
