@@ -1,106 +1,94 @@
-body{
-    background:#c7e9da;
-    
-    
+body {
+  background: #c7e9da;
 }
-.calculadora{
-    padding: 15px;
-    width: 70vw;
-    border:1px solid rgb(9, 71, 9);
-    border-radius: 20px;
-    margin: 20px 14%;
+.calculadora {
+  padding: 15px;
+  width: 70vw;
+  border: 1px solid rgb(9, 71, 9);
+  border-radius: 20px;
+  margin: 20px 14%;
 }
 body h2 {
-    
-    margin-left: 17%;
-    color: rgb(9, 60, 95);
-    font-family: Georgia;
-   
-    
-} 
-h1{
-    text-align: center;
-    color:rgb(27, 61, 122)
+  margin-left: 17%;
+  color: rgb(9, 60, 95);
+  font-family: Georgia;
 }
- p, label, input {
-    font-family: 'Roboto';
-    font-size: 18px;
-     color:#09462f;
-     text-align:justify;    
-     
+h1 {
+  text-align: center;
+  color: rgb(27, 61, 122);
 }
-input{
-    width: 200px;
-    background-color: rgb(180, 209, 219);
-    border:1px solid rgb(180, 209, 219);
-    border-radius: 7px;
-    padding: 5px;
-
+p,
+label,
+input {
+  font-family: "Roboto";
+  font-size: 18px;
+  color: #09462f;
+  text-align: justify;
 }
-button{
-    background-color: dodgerblue;
-    color: white;
-    padding: 5px 15px;
-    border: 1px solid dodgerblue;
-    border-radius: 5px;
-    font-size: 19px;
-
+input {
+  width: 200px;
+  background-color: rgb(180, 209, 219);
+  border: 1px solid rgb(180, 209, 219);
+  border-radius: 7px;
+  padding: 5px;
 }
-#ejecutar :hover{
-    background-color: blue;
+button {
+  background-color: dodgerblue;
+  color: white;
+  padding: 5px 15px;
+  border: 1px solid dodgerblue;
+  border-radius: 5px;
+  font-size: 19px;
 }
-.container{
-    position: relative;
+#ejecutar :hover {
+  background-color: blue;
 }
-.area1{
-    position: absolute;
-    top:50px;
-    left: 5px;
-
+.container {
+  position: relative;
 }
-.area2{
-    position: absolute;
-    top:50px;
-    left: 50%;
+.area1 {
+  position: absolute;
+  top: 50px;
+  left: 5px;
+}
+.area2 {
+  position: absolute;
+  top: 50px;
+  left: 50%;
 }
 
 #tabla-scroll {
-    max-height: 400px;
-    max-width: 45%;
-    overflow-y: auto;
-    border: 2px double blue;
-    border-radius: 15px;
-
-
+  max-height: 400px;
+  max-width: 45%;
+  overflow-y: auto;
+  border: 2px double blue;
+  border-radius: 15px;
 }
 
 table {
-    border-collapse: collapse;
-    margin: 10px 10px;
-    border: 1px solid #2c966d;
+  border-collapse: collapse;
+  margin: 10px 10px;
+  border: 1px solid #2c966d;
 }
 
 .encabezado {
-    position: sticky;
-    top:0px;
-    z-index: 2;
-    background: lightblue;
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+  background: lightblue;
 }
 
-tr
-th {
-    width: 100px;
-    background-color: lightblue;
-    color: rgb(12, 75, 12);
-    font-size: .9rem;
-    padding: 5px 5px;}
+tr th {
+  width: 100px;
+  background-color: lightblue;
+  color: rgb(12, 75, 12);
+  font-size: 0.9rem;
+  padding: 5px 5px;
+}
 
-tr
-td {
-    background-color: azure;
-    color: rgb(17, 71, 71);
-    font-size: .9rem;
-    padding: 5px 2px;
-
-
+tr td {
+  background-color: azure;
+  color: rgb(17, 71, 71);
+  font-size: 0.9rem;
+  padding: 5px 2px;
 }

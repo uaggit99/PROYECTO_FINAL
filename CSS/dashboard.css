@@ -21,7 +21,7 @@ h2 {
 }
 
 .graficos {
-  flex: 1 1 500px; 
+  flex: 1 1 500px;
   min-width: 400px;
   max-width: 100%;
   height: auto;
@@ -33,7 +33,7 @@ h2 {
 }
 @media (max-width: 550px) {
   .graficos {
-    display:flexbox;
+    display: flexbox;
     margin-left: 0;
     max-width: 250px;
     flex-wrap: wrap;
@@ -42,7 +42,7 @@ h2 {
     text-align: center;
     border: none;
   }
-  h2{
+  h2 {
     font-size: 16px;
   }
 }
