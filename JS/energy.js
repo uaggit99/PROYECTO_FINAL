@@ -90,7 +90,7 @@ document.getElementById("ejecutar").addEventListener("click", function (e) {
   let respuesta = document.getElementById("respuesta");
   const numeroDecimal = /^\d+(\.\d+)?$/;
 
-  if (!numeroDecimal.test(valor)){
+  if (!numeroDecimal.test(valor)) {
     respuesta.innerHTML = "Ingrese valores numericos";
     return;
   }
